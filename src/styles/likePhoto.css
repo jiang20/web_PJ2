@@ -1,0 +1,98 @@
+html, body, header, footer, hgroup, nav, main, article, section, figure, figcaption, h1, h2, h3, ul, li, body, div, p, img
+{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+}
+body
+{
+    font-family: sans-serif;
+}
+.likePhoto
+{
+    width: 95%;
+    border-radius: 5px;
+    border-left: 1px solid lightsteelblue;
+    border-right: 1px solid lightsteelblue;
+    border-top: 1px solid lightsteelblue;
+    /*padding: 8px;*/
+    margin: 10px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.likePhoto td
+{
+    border-bottom: 1px solid lightsteelblue;
+    margin: 5px 15px;
+}
+
+.likePhoto table td.introduction
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*white-space: nowrap;*/
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    /*overflow: hidden;*/
+}
+
+.likePhoto td.tableTitle
+{
+    color: #505050;
+    padding: 7px;
+    font-size: 14px;
+    background-color: rgba(199, 199, 199, 0.2);
+}
+
+.likePhoto img
+{
+    display: inline-block;
+    width: 20%;
+    padding: 5px 0;
+}
+.likePhoto table
+{
+    display: inline-block;
+    width: 70%;
+    vertical-align: top;
+    padding-top: 5px;
+}
+.likePhoto table td {
+    border-bottom: none;
+    font-size: 14px;
+}
+
+.likePhoto table td.photoTitle
+{
+    font-size: 15px;
+}
+
+.deleteButton
+{
+    display: inline-block;
+    height: 100%;
+    width: 15%;/*这里的*/
+    font: 100% bold;
+    background:linear-gradient(to bottom, gainsboro, whitesmoke);
+    /*padding: 5px 20px;*/
+    padding: 10px 5px;
+    border-radius: 6px;
+    border-color: lightgrey;
+    text-align: center;
+    color: red;
+    cursor: pointer;
+}
+
+.deleteButton:hover
+{
+    background: gainsboro;
+}
+
+.deleteButton:focus
+{
+    outline: none;
+}

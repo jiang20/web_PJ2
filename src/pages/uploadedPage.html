@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TravelShare:UploadPage</title>
+    <link rel="stylesheet" type="text/css" href="../styles/top.css">
+    <link rel="stylesheet" type="text/css" href="../styles/basicButton.css">
+    <link rel="stylesheet" type="text/css" href="../styles/upload.css">
+    <link rel="stylesheet" type="text/css" href="../styles/foot.css">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<!--    <script src="../js/upload1.js"></script>-->
+<!--    <script src="../js/upload.js"></script>-->
+</head>
+<body onresize="changed()">
+<header id="header">
+    <nav class="navigation">
+        <ul>
+            <li><img src="../../decoration-images/img1/cartoon.jpg"></li>
+            <li><a href="homePage.html">Home</a></li>
+            <li><a href="browsePage.html">Browse</a></li>
+            <li><a href="searchPage.html">Search</a></li>
+        </ul>
+    </nav>
+    <div class="dropdown">
+        <button id="account">My account</button>
+        <div class="dropdown-content">
+            <a href="uploadedPage.html" class="active"><img src="../../decoration-images/icons/upload.png">upload</a>
+            <a href="myPhoto.html"><img src="../../decoration-images/icons/photo.png">my photos</a>
+            <a href="like.html"><img src="../../decoration-images/icons/like.png">like</a>
+            <a href="../../index.html"><img src="../../decoration-images/icons/sign.png">sign in</a>
+        </div>
+    </div>
+</header>
+<main>
+    <table class="uploadTable">
+        <tr>
+            <td class="tableTitle">Upload</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="uploadedPicture">
+                    <img class="uploadedPicture">
+                    <p class="notUpload">未上传图片</p>
+                </div>
+                <div id="box" style="">
+                    <!-- 上传广告图 -->
+                    <form class="upBox">
+                        <div class="inputBox btn">
+                            <input type="file" title="请选择图片" id="file1" multiple accept="image/png,image/jpg,image/gif,image/JPEG"/>
+                            <input class="uploadButton" type="button" value="Upload" onclick />
+                        </div>
+                    </form>
+                </div>
+<!--                <div class="btn">-->
+<!--                    <button class="uploadButton">Upload</button>-->
+<!--                </div>-->
+                <div class="pictureInfo">
+                    <form>
+                        图片标题:<br>
+                        <br>
+                        <input type="text" name="pictureTitle">
+                    </form>
+                    <form>
+                        图片描述:<br><br>
+                        <textarea type="text" name="pictureDescription" cols="150%"></textarea>
+                    </form>
+                    <form>
+                        拍摄国家:<br><br>
+                        <input type="text" name="pictureDescription">
+                    </form>
+                    <form>
+                        拍摄城市:<br><br>
+                        <input type="text" name="pictureDescription">
+                    </form>
+                </div>
+                <button class="submitButton" onclick="alert('submitting')"><a href="picture.html">Submit</a></button>
+            </td>
+        </tr>
+    </table>
+</main>
+<footer id="normalFoot">
+    This is the first web by Little JiangJiang. Wish you best!
+</footer>
+</body>
+</html>
+<script src="../js/jquery-3.3.1.js"></script>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/upload.js"></script>

@@ -1,0 +1,208 @@
+html, body, header, footer, hgroup, nav, main, article, section, figure, figcaption, h1, h2, h3, ul, li, body, div, p, img
+{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+
+}
+html
+{
+    min-height: 100%;
+    font-family: sans-serif;
+}
+
+#leftBrowser
+{
+    width: 25%;
+    position: relative;
+    margin-left: 2%;
+    /*top: 5%;*/
+    margin-top: 3%;
+    display: inline-block;
+    vertical-align: top;
+/*    用⬆️实现上对齐，使用对象是设置了inline-block的容器内部元素*/
+}
+
+form
+{
+    border: 1px solid lightsteelblue;
+    border-radius: 4px;
+}
+label
+{
+    font-size: 16px;
+    margin: 0 5px;
+}
+input[type=text]
+{
+    width: 100%;
+    /*height: auto;*/
+    padding: 10px 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Cochin, serif;
+    /*transition: all 0.10s ease-in-out;*/
+    outline: none;
+}
+
+#leftBrowser table
+{
+    width: 95%;
+    border-radius: 5px;
+    border-left: 1px solid lightsteelblue;
+    border-right: 1px solid lightsteelblue;
+    border-top: 1px solid lightsteelblue;
+    /*padding: 8px;*/
+    margin: 10px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+#leftBrowser th
+{
+    background-color: rgba(199, 199, 199, 0.2);
+    color: #505050;
+    font-weight: lighter;
+    padding: 7px;
+    font-size: 14px;
+    text-align: left;
+    border-bottom: 1px solid lightsteelblue;
+}
+#leftBrowser td
+{
+    border-bottom: 1px solid lightsteelblue;
+    font-size: 13px;
+    padding: 7px;
+    text-align: left;
+    color: #5f8fee;
+    cursor: pointer;
+}
+
+main
+{
+    vertical-align: top;
+}
+
+#filter
+{
+    /*left: 25%;*/
+    /*top:10%;*/
+    width: 70%;
+    position: relative;
+    margin-right: 2%;
+    margin-top: 3%;
+    display: inline-block;
+    vertical-align: top;
+}
+#filter table
+{
+    margin-top: 3%;
+    border-left: 1px solid lightsteelblue;
+    border-right: 1px solid lightsteelblue;
+    border-top: 1px solid lightsteelblue;
+    border-radius: 5px;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    float: left;
+}
+#filter .pictures .imageCut
+{
+    width: 20%;
+    display: inline-block;
+    overflow: hidden;
+}
+#filter th
+{
+    background-color: rgba(199, 199, 199, 0.2);
+    text-align: center;
+    border-bottom: 1px solid lightsteelblue;
+    color: #505050;
+    font-weight: lighter;
+    padding: 7px;
+    font-size: 14px;
+}
+
+#filter td
+{
+    border-bottom: 1px solid lightsteelblue;
+    font-size: 15px;
+    padding: 15px;
+    text-align: center;
+    /*border-collapse: collapse;*/
+}
+#filter form
+{
+    height: 35px;
+    width: 100%;
+    border: none;
+}
+#filter select
+{
+    background-color: white;
+    color: #000026;
+    width: 30%;
+    height: 85%;
+    /*font-size: 80%;*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    outline: none;
+}
+#filter .filters
+{
+    display: inline-block;
+    width: 70%;
+    /*height: 100%;*/
+}
+#filter .filters select
+{
+    height: 100%;
+}
+#filter button
+{
+    display: inline-block;
+    height: 100%;
+    width: 20%;
+    font-size: 100%;
+    /*font-weight: bold;*/
+    background:linear-gradient(to bottom, limegreen, #068b06);
+    padding: 5px 20px;
+    /*margin: auto 0;*/
+    color: white;
+    border-radius: 6px;
+    border-color: green;
+    cursor: pointer;
+    /*vertical-align: center;*/
+}
+
+#filter button:hover
+{
+    background: green;
+}
+#filter button:focus
+{
+    outline: none;
+}
+#filter .pictures
+{
+    float: left;
+    display: block;
+    /*position: relative;*/
+}
+#filter .pictures img
+{
+    width: 20%;
+    /*height: 100%;*/
+    padding: 1% 2%;
+}
+
+#filter table
+{
+    margin-top: 0;
+}

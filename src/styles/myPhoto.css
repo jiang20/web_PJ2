@@ -1,0 +1,110 @@
+html, body, header, footer, hgroup, nav, main, article, section, figure, figcaption, h1, h2, h3, ul, li, body, div, p, img
+{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+}
+body
+{
+    font-family: sans-serif;
+}
+.myPhotos
+{
+    width: 95%;
+    border-radius: 5px;
+    border-left: 1px solid lightsteelblue;
+    border-right: 1px solid lightsteelblue;
+    border-top: 1px solid lightsteelblue;
+    /*padding: 8px;*/
+    margin: 10px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.myPhotos td
+{
+    border-bottom: 1px solid lightsteelblue;
+    margin: 5px 0 5px 15px;
+}
+
+.myPhotos .tableTitle td
+{
+    /*color: dimgray;*/
+    /*font-weight: bold;*/
+    /*font-size: 15px;*/
+    color: #505050;
+    padding: 7px;
+    font-size: 14px;
+    background-color: rgba(199, 199, 199, 0.2);
+}
+
+.myPhotos img
+{
+    width: 20%;
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.myPhotos table
+{
+    width: 75%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 0 0 5px;
+}
+
+.myPhotos table td
+{
+    border-bottom: none;
+    font-size: 14px;
+}
+.myPhotos table td.photoName
+{
+    font-size: 15px;
+}
+.myPhotos table td.introduction
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*white-space: nowrap;*/
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    /*overflow: hidden;*/
+}
+.modifyButton,.deleteButton
+{
+    display: inline-block;
+    height: 100%;
+    width: 15%;
+    font: 100% bold;
+    background:linear-gradient(to bottom, #ededed, #fefefe);
+    /*padding: 5px 20px;*/
+    padding: 10px 5px;
+    border-radius: 6px;
+    border-color: #e7e7e7;
+    text-align: center;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+.modifyButton:hover,.deleteButton:hover
+{
+    background: gainsboro;
+}
+.modifyButton:focus,.deleteButton:focus
+{
+    outline: none;
+}
+
+.modifyButton
+{
+    color: darkmagenta;
+}
+
+.deleteButton
+{
+    color: red;
+}

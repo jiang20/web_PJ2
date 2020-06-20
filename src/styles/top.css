@@ -1,0 +1,189 @@
+html, body, header, footer, hgroup, nav, main, article, section, figure, figcaption, h1, h2, h3, ul, li, body, div, p, img
+{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+}
+body
+{
+    font-family: sans-serif;
+}
+#header
+{
+    /*height: 5%;*/
+    width: 100%;
+    background-color: black;
+    /*position: relative;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    overflow: hidden;
+}
+.navigation{
+    width: 80%;
+    height: 100%;
+    float: left;
+    display: inline-block;
+    background-color: black;
+}
+
+#header .navigation ul li img
+{
+    height: 40px;
+}
+#header ul
+{
+    width: auto;
+    height: 100%;
+    list-style-type: none;
+    white-space: nowrap;
+    margin-left: 5%;
+    /*margin-bottom: 0;*/
+    /*margin-top: 0;*/
+    padding: 0;/*兼容性问题*/
+    overflow: hidden;
+}
+#header li
+{
+    color: white;
+    font-size: 15px;
+    float: left;
+    margin-right: 2%;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    height: 40px;
+}
+#header li a
+{
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 16px;
+    overflow: hidden;
+    height: 100%;
+}
+
+li a:hover:not(.active)
+{
+    background-color: dimgray;
+    color: white;
+}
+
+.active
+{
+    background: cadetblue;
+}
+
+#signIn {
+    background-color: black;;
+    color: white;
+    padding: 8px 16px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+#signIn:hover{
+    outline: none;
+}
+
+#account {
+    background-color: black;;
+    color: white;
+    padding: 8px 16px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    /*position: relative;*/
+    float: right;
+    display: inline-block;
+    height: 40px;
+    width: 16%;
+    overflow: visible;
+}
+
+.dropdown #account
+{
+    height: 100%;
+}
+.dropdown #account:focus
+{
+    outline: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 15px;
+}
+.dropdown-content img
+{
+    width: 20%;
+    padding-right: 10px;
+}
+.dropdown-content:focus
+{
+    outline: none;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 75%;
+    /*float: right;*/
+}
+
+.dropdown-content a:focus
+{
+    outline: none;
+}
+
+.dropdown-content a:hover:not(.active)
+{
+    background-color: #f1f1f1
+}
+.dropdown-content a.active
+{
+    background-color: #dedede;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*.dropdown-content a {*/
+/*color: black;*/
+/*padding: 12px 16px;*/
+/*text-decoration: none;*/
+/*display: block;*/
+/*}*/
+/*.dropdown:hover .dropdown-content {*/
+/*display: block;*/
+/*}*/
+/*.personal:hover .dropdown-content*/
+/*{*/
+/*display: block;*/
+/*!*float: top;*!*/
+/*position: absolute;*/
+/*}*/
+/*a:hover .dropdown-content*/
+/*{*/
+/*color: black;*/
+/*background-color: dimgray;*/
+/*display: block;*/
+/*text-decoration: none;*/
+/*}*/
+/*a .dropdown-content*/
+/*{*/
+/*color: red;*/
+/*display: block;*/
+/*}*/

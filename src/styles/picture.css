@@ -1,0 +1,127 @@
+html, body, header, footer, hgroup, nav, main, article, section, figure, figcaption, h1, h2, h3, ul, li, body, div, p, img
+{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+}
+body
+{
+    font-family: sans-serif;
+}
+#specificPicture,.details table
+{
+    width: 95%;
+    border-radius: 5px;
+    border-left: 1px solid lightsteelblue;
+    border-right: 1px solid lightsteelblue;
+    border-top: 1px solid lightsteelblue;
+    /*padding: 8px;*/
+    margin: 10px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+#specificPicture td, .details td
+{
+    border-bottom: 1px solid lightsteelblue;
+    padding: 10px 15px;
+    font-size: 13px;
+}
+
+#specificPicture .tableTitle, .details .tableTitle
+{
+    color: dimgray;
+    /*font-weight: bold;*/
+    font-size: 15px;
+    background-color: rgba(199, 199, 199, 0.2);
+}
+
+.detailsTitle
+{
+    text-align: center;
+}
+.pictureTitle
+{
+    display: inline-block;
+    font-size: 2pc;
+    padding-right: 3%;
+}
+
+.pictureOwner
+{
+    display: inline-block;
+    font-size: 1pc;
+}
+.primary
+{
+    text-align: center;
+    margin: 50px 0;
+}
+.picture
+{
+    display: inline-block;
+    width: 40%;
+    padding-right: 4%;
+    vertical-align: top;
+}
+
+.picture img
+{
+    width: 100%;
+}
+
+.details
+{
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    text-align: left;
+}
+
+.details table
+{
+    margin: 10px 0;
+    width: 100%;
+}
+#specificPicture .details td.likes
+{
+    color: #e23e25;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.details button
+{
+    width: 100%;
+    background-color: #e23e25;
+    color: white;
+    border-radius: 5px;
+    border-color: #e23e25;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+#specificPicture p
+{
+    text-align: justify;
+    text-justify: inter-ideograph;
+    text-indent: 2em;
+}
+
+.introduction
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+}
+.footerNotFull
+{
+    position: absolute;
+    bottom: 0;
+}

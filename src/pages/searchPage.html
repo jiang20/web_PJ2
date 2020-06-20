@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TravelShare:SearchPage</title>
+    <link rel="stylesheet" type="text/css" href="../styles/top.css">
+<!--    <link rel="stylesheet" type="text/css" href="../styles/basicTable.css">-->
+    <link rel="stylesheet" type="text/css" href="../styles/search.css">
+    <link rel="stylesheet" type="text/css" href="../styles/foot.css">
+    <link rel="stylesheet" type="text/css" href="../styles/pagination.css">
+</head>
+<body onresize="changed()">
+<header id="header">
+    <nav class="navigation">
+        <ul>
+            <li><img src="../../decoration-images/img1/cartoon.jpg"></li>
+            <li><a href="homePage.html">Home</a></li>
+            <li><a href="browsePage.html">Browse</a></li>
+            <li><a class="active" href="searchPage.html">Search</a></li>
+        </ul>
+    </nav>
+    <div class="dropdown">
+        <button id="account">My account</button>
+        <div class="dropdown-content">
+            <a href="uploadedPage.html"><img src="../../decoration-images/icons/upload.png">upload</a>
+            <a href="myPhoto.html"><img src="../../decoration-images/icons/photo.png">my photos</a>
+            <a href="like.html"><img src="../../decoration-images/icons/like.png">like</a>
+            <a href="../../index.html"><img src="../../decoration-images/icons/sign.png">sign in</a>
+        </div>
+    </div>
+</header>
+<main>
+    <table class="searchOption">
+        <tr>
+            <td class="searchName">Search here</td>
+        </tr>
+        <tr>
+            <td>
+                <form>
+                    <label>
+                        <input type="radio" name="search method" value="title">Filter by Title<br>
+                        <input type="text" name="context" class="searchTitle">
+                        <br>
+                        <input type="radio" name="search method" value="description">Filter by Description<br>
+                        <textarea type="text"rows="10%" name="context"></textarea>
+                    </label>
+                </form>
+                <button onclick="alert('Filtering...')">Filter</button>
+            </td>
+        </tr>
+    </table>
+    <table class="searchOption">
+        <tr>
+            <td class="searchName">Result</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="showImg">
+                    <a href="picture.html"><img src="../../travel-images/medium/6114867983.jpg"></a>
+                </div>
+                <table>
+                    <tr>
+                        <td class="resultTitle">Title</td>
+                    </tr>
+                    <tr>
+                        <td class="introduction">
+                            筛选部分:用户可以通过单选选项选择使用标题筛选或者描述筛选，并可以在输入框中输入搜索文
+                            字之后点击下方按钮进行搜索(alert)。默认通过标题筛选。 搜索结果:展示满足搜索条件的图片信息
+                            图片信息包括图片、图片标题、图片描述。
+                            每一项结果的左边是缩略图，右边是标题和描述，标题与描述有区分。
+                            描述需要有多行，如果超出描述框以省略号显示。
+                            下方使用⻚码进行多个搜索结果⻚的跳转......筛选部分:用户可以通过单选选项选择使用标题筛选或者描述筛选，并可以在输入框中输入搜索文
+                            字之后点击下方按钮进行搜索(alert)。默认通过标题筛选。 搜索结果:展示满足搜索条件的图片信息
+                            图片信息包括图片、图片标题、图片描述。
+                            每一项结果的左边是缩略图，右边是标题和描述，标题与描述有区分。
+                            描述需要有多行，如果超出描述框以省略号显示。
+                            下方使用⻚码进行多个搜索结果⻚的跳转筛选部分:用户可以通过单选选项选择使用标题筛选或者描述筛选，并可以在输入框中输入搜索文
+                            字之后点击下方按钮进行搜索(alert)。默认通过标题筛选。 搜索结果:展示满足搜索条件的图片信息
+                            图片信息包括图片、图片标题、图片描述。
+                            每一项结果的左边是缩略图，右边是标题和描述，标题与描述有区分。
+                            描述需要有多行，如果超出描述框以省略号显示。
+                            下方使用⻚码进行多个搜索结果⻚的跳转
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="showImg">
+                    <a href="picture.html"><img src="../../travel-images/medium/6114867983.jpg"></a>
+                </div>
+                <table>
+                    <tr>
+                        <td class="resultTitle">Title</td>
+                    </tr>
+                    <tr>
+                        <td class="introduction">
+                            筛选部分:用户可以通过单选选项选择使用标题筛选或者描述筛选，并可以在输入框中输入搜索文
+                            字之后点击下方按钮进行搜索(alert)。默认通过标题筛选。 搜索结果:展示满足搜索条件的图片信息
+                            图片信息包括图片、图片标题、图片描述。
+                            每一项结果的左边是缩略图，右边是标题和描述，标题与描述有区分。
+                            描述需要有多行，如果超出描述框以省略号显示。
+                            下方使用⻚码进行多个搜索结果⻚的跳转......筛选部分:用户可以通过单选选项选择使用标题筛选或者描述筛选，并可以在输入框中输入搜索文
+                            字之后点击下方按钮进行搜索(alert)。默认通过标题筛选。 搜索结果:展示满足搜索条件的图片信息
+                            图片信息包括图片、图片标题、图片描述。
+                            每一项结果的左边是缩略图，右边是标题和描述，标题与描述有区分。
+                            描述需要有多行，如果超出描述框以省略号显示。
+                            下方使用⻚码进行多个搜索结果⻚的跳转
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="showImg">
+                    <a href="picture.html"><img src="../../travel-images/medium/6114867983.jpg"></a>
+                </div>
+                <table>
+                    <tr>
+                        <td class="resultTitle">Title</td>
+                    </tr>
+                    <tr>
+                        <td class="introduction">
+                            筛选部分:用户可以通过单选选项选择使用标题筛选或者描述筛选，并可以在输入框中输入搜索文
+                            字之后点击下方按钮进行搜索(alert)。默认通过标题筛选。 搜索结果:展示满足搜索条件的图片信息
+                            图片信息包括图片、图片标题、图片描述。
+                            每一项结果的左边是缩略图，右边是标题和描述，标题与描述有区分。
+                            描述需要有多行，如果超出描述框以省略号显示。
+                            下方使用⻚码进行多个搜索结果⻚的跳转......筛选部分:用户可以通过单选选项选择使用标题筛选或者描述筛选，并可以在输入框中输入搜索文
+                            字之后点击下方按钮进行搜索(alert)。默认通过标题筛选。 搜索结果:展示满足搜索条件的图片信息
+                            图片信息包括图片、图片标题、图片描述。
+                            每一项结果的左边是缩略图，右边是标题和描述，标题与描述有区分。
+                            描述需要有多行，如果超出描述框以省略号显示。
+                            下方使用⻚码进行多个搜索结果⻚的跳转筛选部分:用户可以通过单选选项选择使用标题筛选或者描述筛选，并可以在输入框中输入搜索文
+                            字之后点击下方按钮进行搜索(alert)。默认通过标题筛选。 搜索结果:展示满足搜索条件的图片信息
+                            图片信息包括图片、图片标题、图片描述。
+                            每一项结果的左边是缩略图，右边是标题和描述，标题与描述有区分。
+                            描述需要有多行，如果超出描述框以省略号显示。
+                            下方使用⻚码进行多个搜索结果⻚的跳转
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="showImg">
+                    <a href="picture.html"><img src="../../travel-images/medium/6114867983.jpg"></a>
+                </div>
+                <table>
+                    <tr>
+                        <td class="resultTitle">Title</td>
+                    </tr>
+                    <tr>
+                        <td class="introduction">
+                            筛选部分:用户可以通过单选选项选择使用标题筛选或者描述筛选，并可以在输入框中输入搜索文
+                            字之后点击下方按钮进行搜索(alert)。默认通过标题筛选。 搜索结果:展示满足搜索条件的图片信息
+                            图片信息包括图片、图片标题、图片描述。
+                            每一项结果的左边是缩略图，右边是标题和描述，标题与描述有区分。
+                            描述需要有多行，如果超出描述框以省略号显示。
+                            下方使用⻚码进行多个搜索结果⻚的跳转......筛选部分:用户可以通过单选选项选择使用标题筛选或者描述筛选，并可以在输入框中输入搜索文
+                            字之后点击下方按钮进行搜索(alert)。默认通过标题筛选。 搜索结果:展示满足搜索条件的图片信息
+                            图片信息包括图片、图片标题、图片描述。
+                            每一项结果的左边是缩略图，右边是标题和描述，标题与描述有区分。
+                            描述需要有多行，如果超出描述框以省略号显示。
+                            下方使用⻚码进行多个搜索结果⻚的跳转
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="showImg">
+                    <a href="picture.html"><img src="../../travel-images/medium/6114867983.jpg"></a>
+                </div>
+                <table>
+                    <tr>
+                        <td class="resultTitle">Title</td>
+                    </tr>
+                    <tr>
+                        <td class="introduction">
+                            筛选部分:用户可以通过单选选项选择使用标题筛选或者描述筛选，并可以在输入框中输入搜索文
+                            字之后点击下方按钮进行搜索(alert)。默认通过标题筛选。 搜索结果:展示满足搜索条件的图片信息
+                            图片信息包括图片、图片标题、图片描述。
+                            每一项结果的左边是缩略图，右边是标题和描述，标题与描述有区分。
+                            描述需要有多行，如果超出描述框以省略号显示。
+                            下方使用⻚码进行多个搜索结果⻚的跳转......筛选部分:用户可以通过单选选项选择使用标题筛选或者描述筛选，并可以在输入框中输入搜索文
+                            字之后点击下方按钮进行搜索(alert)。默认通过标题筛选。 搜索结果:展示满足搜索条件的图片信息
+                            图片信息包括图片、图片标题、图片描述。
+                            每一项结果的左边是缩略图，右边是标题和描述，标题与描述有区分。
+                            描述需要有多行，如果超出描述框以省略号显示。
+                            下方使用⻚码进行多个搜索结果⻚的跳转
+                        </td>
+                    </tr>
+                    <div class="pagination">
+                        <ul>
+                            <li><a href="searchPage.html">«</a></li>
+                            <li><a class="active" href="searchPage.html">首</a></li>
+                            <li><a href="searchPage.html">2</a></li>
+                            <li><a href="searchPage.html">3</a></li>
+                            <li><a href="searchPage.html">4</a></li>
+                            <li><a href="searchPage.html">5</a></li>
+                            <li><a href="searchPage.html">6</a></li>
+                            <li><a href="searchPage.html">尾</a></li>
+                            <li><a href="searchPage.html">»</a></li>
+                        </ul>
+                    </div>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <footer id="normalFoot">
+        This is the first web by Little JiangJiang. Wish you best!
+    </footer>
+</main>
+</body>
+</html>
+<script src="../js/jquery-3.3.1.js"></script>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/foot.js"></script>
